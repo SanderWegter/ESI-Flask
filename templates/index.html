@@ -1,10 +1,17 @@
 <html>
 
 	<head>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	</head>
 
 	<body>
-		<H1>Your page here</H1>
+		<h1>Your page here</h1>
+		<div id='data'></div>
 	</body>
 
+<script type="text/javascript">
+	$.get('/getLocation', function(data){
+		$('#data').html(data);
+	});
+</script>
 </html>
