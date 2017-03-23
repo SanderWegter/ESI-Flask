@@ -22,7 +22,7 @@ if __name__ == '__main__':
 
 	security = EsiSecurity(
 		app=esi_app,
-		redirect_uri='http://yourhost:'+serverPort+'/oauth',
+		redirect_uri='http://yourhost:'+str(serverPort)+'/oauth',
 		client_id='CLIENT_KEY',
 		secret_key='SECRET_KEY'
 		)
