@@ -26,6 +26,8 @@ Browse to http://yourhostname:12345/ and use the eve SSO to log in.
 * Add more examples
 
 ### Thanks
+Using [ESiPy](https://github.com/Kyria/EsiPy)
+
 If it helped, isk donations can go to madpilot0 :-)
 
 # CCP Copyright Notice
