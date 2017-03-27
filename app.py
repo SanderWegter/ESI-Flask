@@ -12,19 +12,21 @@ import requests
 app = Flask(__name__)
 
 if __name__ == '__main__':
-	serverIP = '0.0.0.0'
-	serverPort = 12345
+	config = {}
+	execfile("config.conf",config)
+	serverIP = config['serverIP']
+	serverPort = config['serverPort']
 
-	debug = True
+	debug = config['debug']
 
-	app.secret_key = 'somesecretkey'
+	app.secret_key = config['appKey']
 	esi_app = App.create('https://esi.tech.ccp.is/latest/swagger.json?datasource=tranquility')
 
 	security = EsiSecurity(
 		app=esi_app,
-		redirect_uri='http://yourhost:'+str(serverPort)+'/oauth',
-		client_id='CLIENT_KEY',
-		secret_key='SECRET_KEY'
+		redirect_uri=config['callbackURL'],
+		client_id=config['clientID'],
+		secret_key=config['secretKey']
 		)
 	client = EsiClient(security=security)
 	scopes = ['esi-location.read_location.v1']
