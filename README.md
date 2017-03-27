@@ -12,19 +12,18 @@ pip install flask
 
 ## Usage
 
-* Add the client and secret keys to app.py
-* Add your callback url to app.py (eg. http://yourhostname.com/)
+* Copy config.example.conf to config.conf `cp config.example.conf config.conf`
+* Add the client/secret keys and callback URL to config.conf
 ```
 chmod +x app.py
 ./app.py
 ```
-Browse to http://server:12345/ and use the eve SSO to log in. 
+Browse to http://yourhostname:12345/ and use the eve SSO to log in. 
 
 ## Todo
 * Add installation guide
 * Add usage guide
 * Add more examples
-* More secure way (env?) of storing client/secret keys
 
 ### Thanks
 If it helped, isk donations can go to madpilot0 :-)
