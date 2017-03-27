@@ -20,6 +20,8 @@ chmod +x app.py
 ```
 Browse to http://yourhostname:12345/ and use the eve SSO to log in. 
 
+Information on what ESI endpoints are available, please visit the [ESI page](https://esi.tech.ccp.is/latest/).
+
 ## Todo
 * Add installation guide
 * Add usage guide
