@@ -24,6 +24,7 @@ Browse to http://server:12345/ and use the eve SSO to log in.
 * Add installation guide
 * Add usage guide
 * Add more examples
+* More secure way (env?) of storing client/secret keys
 
 ### Thanks
 If it helped, isk donations can go to madpilot0 :-)
