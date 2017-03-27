@@ -40,10 +40,10 @@ def location():
 		charID = verif.get('CharacterID')
 		charLocation = esi_app.op['get_characters_character_id_location'](character_id=charID)
 		result = client.request(charLocation)
-		location = json.loads(res.raw)
+		location = json.loads(result.raw)
 		sysID = location.get('solar_system_id')
-		return sysID
-
+		returnArray = [{"sysID": sysID}]
+		return jsonify(results=returnArray)
 
 @app.route('/')
 def index():

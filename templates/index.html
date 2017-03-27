@@ -11,7 +11,7 @@
 
 <script type="text/javascript">
 	$.get('/getLocation', function(data){
-		$('#data').html(data);
+		$('#data').html(data.results[0].sysID);
 	});
 </script>
 </html>
