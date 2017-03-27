@@ -8,8 +8,12 @@ pip install esipy
 pip install flask
 ```
 * An application Client- and secret key from [CCP Developers Page](https://developers.eveonline.com/applications)
+* Set your callback url on the ccp developers page (eg. http://yourhostname.com:12345/oauth/)
 
 ## Usage
+
+* Add the client and secret keys to app.py
+* Add your callback url to app.py (eg. http://yourhostname.com/)
 ```
 chmod +x app.py
 ./app.py
