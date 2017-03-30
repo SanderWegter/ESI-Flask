@@ -26,6 +26,7 @@ Information on what ESI endpoints are available, please visit the [ESI page](htt
 * Add installation guide
 * Add usage guide
 * Add more examples
+* Pretty log-in page
 
 ### Thanks
 Using [ESiPy](https://github.com/Kyria/EsiPy)
