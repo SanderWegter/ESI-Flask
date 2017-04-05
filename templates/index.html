@@ -5,13 +5,13 @@
 	</head>
 
 	<body>
-		<h1>Your page here</h1>
+		<h1>Current solar system</h1>
 		<div id='data'></div>
 	</body>
 
 <script type="text/javascript">
 	$.get('/getLocation', function(data){
-		$('#data').html(data.results[0].sysID);
+		$('#data').html("Current systemID: "+data.results[0].sysID);
 	});
 </script>
 </html>
